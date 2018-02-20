@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/appliedblockchain/trufflib/issues"
   },
-  "homepage": "https://github.com/appliedblockchain/trufflib#readme"
+  "homepage": "https://github.com/appliedblockchain/trufflib#readme",
+  "eslintConfig": {
+    "extends": "@appliedblockchain"
+  },
+  "devDependencies": {
+    "@appliedblockchain/eslint-config": "^1.3.0",
+    "eslint": "^4.18.0"
+  }
 }

@@ -4,7 +4,7 @@ library Err {
 
   event Error(string message);
 
-  // Halts execution any changes to storage made before calling this WILL be persit
+  // Halts execution any changes to storage made before calling this WILL be persisted
   function stopExecution() internal pure {
     assembly {
       stop
