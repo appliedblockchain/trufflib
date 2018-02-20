@@ -1,0 +1,19 @@
+{
+  "name": "@appliedblockchain/trufflib",
+  "version": "0.0.1",
+  "description": "Shared solidity libraries and helpers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appliedblockchain/trufflib.git"
+  },
+  "author": "Simon Tabor",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/appliedblockchain/trufflib/issues"
+  },
+  "homepage": "https://github.com/appliedblockchain/trufflib#readme"
+}
