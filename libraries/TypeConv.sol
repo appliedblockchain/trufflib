@@ -2,8 +2,7 @@ pragma solidity ^0.4.18;
 
 library TypeConv {
 
-  /* not needed in Nuggets (yet) */
-  /*function bytesToUint(bytes b) internal returns (uint) {
+  function bytesToUint(bytes b) internal pure returns (uint) {
       uint result = 0;
       for (uint i = 0; i < b.length; i++) {
           if (b[i] >= 48 && b[i] <= 57) {
@@ -11,7 +10,7 @@ library TypeConv {
           }
       }
       return result;
-  }*/
+  }
 
   function uintToBytes(uint v) internal pure returns (bytes) {
     uint maxlength = 100;
