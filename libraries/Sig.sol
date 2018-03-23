@@ -5,8 +5,6 @@ import "./ECVerify.sol";
 library Sig {
 
   event Error(string message);
-  event Debug(string key, bytes value);
-  event Debug_bytes32(string key, bytes32 value);
 
   struct t {
     bytes32 hash;
@@ -21,9 +19,6 @@ library Sig {
       mstore(add(c, add(0x20, 32)), b)
     }
     self.hash = keccak256(c);
-    Debug_bytes32('join a', a);
-    Debug_bytes32('join b', b);
-    Debug_bytes32('join c', self.hash);
   }
 
   function param(t memory self, bytes memory value) internal {
