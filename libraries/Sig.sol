@@ -38,7 +38,8 @@ library Sig {
   }
 
   function param(t memory self, bool value) internal pure {
-    join(self, keccak256(abi.encodePacked(value)));
+    uint boolToInt = value ? 1 : 0;
+    join(self, keccak256(abi.encodePacked(boolToInt)));
   }
 
   function param_string(t memory self, string value) internal pure {
