@@ -24,6 +24,14 @@ library Sig {
   function param(t memory self, bytes memory value) internal pure {
     join(self, keccak256(abi.encodePacked(value)));
   }
+  
+  function param_bytes16(t memory self, bytes16 value) internal pure {
+    join(self, keccak256(abi.encodePacked(value)));
+  }
+
+  function param_bytes32(t memory self, bytes32 value) internal pure {
+    join(self, keccak256(abi.encodePacked(value)));
+  }
 
   function param(t memory self, address value) internal pure {
     join(self, keccak256(abi.encodePacked(value)));
