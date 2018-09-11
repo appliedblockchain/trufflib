@@ -1,6 +1,6 @@
 {
   "name": "@appliedblockchain/trufflib",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Shared solidity libraries and helpers",
   "main": "index.js",
   "scripts": {
